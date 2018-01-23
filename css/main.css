@@ -1,0 +1,48 @@
+body {
+  text-align: center;
+  white-space: nowrap;
+}
+
+.box {
+  display: inline-block;
+  height: 100px;
+  width: 25%;
+}
+
+.red {
+  background-color: red;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green  {
+  background-color: green;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  background-color: grey;
+}
+
+@media screen and (max-width: 600px) {
+  .yellow, .blue {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    white-space: normal;
+  }
+  .box {
+    display: block;
+    width: 100%;
+  }
+}
